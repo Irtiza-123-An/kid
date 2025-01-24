@@ -1,0 +1,275 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f39c12;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.contact {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.hero-content h1 span {
+    color: #f39c12;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.hero-content button {
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Curriculum Section */
+.curriculum {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.curriculum h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.curriculum-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.curriculum-item {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.curriculum-item h3 {
+    font-size: 20px;
+    color: #f39c12;
+    margin-bottom: 10px;
+}
+
+.curriculum-item p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.curriculum-item a {
+    color: #f39c12;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Stories Section */
+.stories {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+}
+
+.stories h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.stories-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stories-grid article {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.stories-grid article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.stories-grid article h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #f39c12;
+}
+
+.stories-grid article p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.stories-grid article span {
+    font-size: 12px;
+    color: #999;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #fff;
+}
+
+.footer-content .about {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-content .links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content .links ul li {
+    margin: 5px 0;
+}
+
+.footer-content .links ul li a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+.footer-content .social a {
+    color: #f39c12;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .curriculum-grid, .stories-grid {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+/* Logo Styles */
+.header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #f39c12;
+}
+
+.header .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
